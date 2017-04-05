@@ -39,10 +39,16 @@ Enumeration.prototype = {
   },
 
   filter: function(array, callback){
-
-
-    
+      var filteredArray = [];
+      for (var object of array){
+        if (callback(object)){
+          filteredArray.push(object)
+          }
+        }
+        return filteredArray;
   }
+
+
 
 
 

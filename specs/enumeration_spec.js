@@ -19,13 +19,13 @@ describe('My Enumeration Library', function() {
     }), { name: "Ringo", instrument: "drums" } )
   });
 
-  it("can map an array (to doubles of the items)", function() {
+  xit("can map an array (to doubles of the items)", function() {
     assert.deepEqual( myEnumLib.map( testArrayOfNumbers, function( number ) {
       return number * 2;
     }), [ 2, 4, 6, 8, 10, 12 ])
   });
 
-  xit("can filter an array (to only even numbers)", function() {
+  it("can filter an array (to only even numbers)", function() {
     assert.deepEqual( myEnumLib.filter( testArrayOfNumbers, function( number ) {
       return number % 2 === 0;
     }), [ 2, 4, 6 ])
